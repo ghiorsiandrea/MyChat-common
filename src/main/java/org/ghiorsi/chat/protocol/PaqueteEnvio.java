@@ -1,6 +1,7 @@
 package org.ghiorsi.chat.protocol;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class PaqueteEnvio implements Serializable {
 
@@ -9,6 +10,8 @@ public class PaqueteEnvio implements Serializable {
      */
 
     private String nick, ip, mensaje;
+
+    private ArrayList<String> Ips;
 
     public String getNick() {
         return nick;
@@ -32,5 +35,13 @@ public class PaqueteEnvio implements Serializable {
 
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
+    }
+
+    public ArrayList<String> getIps() {
+        return Ips;
+    }
+
+    public void setIps(ArrayList<String> ips) {
+        Ips = ips;
     }
 }
