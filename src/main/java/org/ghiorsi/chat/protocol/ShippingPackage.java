@@ -3,7 +3,7 @@ package org.ghiorsi.chat.protocol;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class PaqueteEnvio implements Serializable {
+public class ShippingPackage implements Serializable {
 
     /**
      * This class will be i charge of send the information to the Server, for this, it needs to implement Serializable
